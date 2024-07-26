@@ -26,6 +26,21 @@ header {
     box-sizing: border-box;
 }
 
+/* Container for better alignment */
+.container {
+    max-width: 1200px; /* Adjust as needed */
+    margin: 0 auto; /* Center align container */
+    padding: 0 20px; /* Adjust padding for inner spacing */
+}
+
+/* Adjust header content to fit the container */
+header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header text */
 header h1 {
     font-family: 'Poppins', sans-serif;
     margin: 0;
