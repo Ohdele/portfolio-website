@@ -87,7 +87,8 @@ section {
 h2 {
     font-family: 'Poppins', sans-serif;
     color: #4A90E2;
-    font-size: 1.5em;
+    font-size: 1.8em;
+    margin-bottom: 20px;
 }
 
 /* Profile Image Styles */
@@ -98,6 +99,7 @@ h2 {
     display: block;
     margin: 0 auto;
     border: 3px solid #4A90E2;
+    animation: bounceIn 1s ease-out;
 }
 
 /* Project Card Styles */
@@ -108,6 +110,7 @@ h2 {
     padding: 20px;
     margin-bottom: 20px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: slideUp 0.5s ease-out;
 }
 
 .project:hover {
@@ -142,6 +145,92 @@ footer {
     background-color: #357ABD;
 }
 
+/* Education Section Styles */
+#education {
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+#education h2 {
+    font-size: 1.8em;
+}
+
+#education ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#education ul li {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+/* Skills Section Styles */
+#skills {
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+#skills h2 {
+    font-size: 1.8em;
+}
+
+.skills-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.skill-category {
+    margin-bottom: 20px;
+}
+
+.skill-category h3 {
+    font-size: 1.5em;
+}
+
+.skill-category ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.skill-category ul li {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+/* Interests Section Styles */
+#interests {
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+#interests h2 {
+    font-size: 1.8em;
+}
+
+#interests ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#interests ul li {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
 /* Animations */
 @keyframes fadeIn {
     from {
@@ -149,5 +238,30 @@ footer {
     }
     to {
         opacity: 1;
+    }
+}
+
+@keyframes bounceIn {
+    from {
+        opacity: 0;
+        transform: scale(0.3);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.1);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
